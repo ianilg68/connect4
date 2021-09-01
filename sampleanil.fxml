@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sampleanil.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="308.0" minWidth="221.0" prefWidth="221.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnSpan="2" />
+        <Pane fx:id="inserteddiskpane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <Region maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="225.0" VBox.vgrow="ALWAYS" />
+            <TextField fx:id="name1" alignment="CENTER" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="Player 1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="name2" alignment="CENTER" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="Player 2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <Region maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="13.0" prefWidth="225.0" />
+            <Button fx:id="b1" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Set Names" />
+                <Label fx:id="playernamelabel" alignment="CENTER" prefHeight="69.0" prefWidth="225.0" text="Player One">
+                    <font>
+                        <Font name="AR CENA" size="28.0" />
+                    </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.5476190476190477" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+                </Label>
+                <Label fx:id="turnlabel" alignment="CENTER" prefHeight="52.0" prefWidth="225.0" text="Turn">
+                    <font>
+                        <Font name="AR CENA" size="25.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.4" startY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+                <Region maxHeight="-Infinity" minHeight="-Infinity" prefHeight="136.0" prefWidth="225.0" VBox.vgrow="ALWAYS" />
+            </children>
+        </VBox>
+    </children>
+</GridPane>
